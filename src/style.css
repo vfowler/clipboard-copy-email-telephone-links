@@ -1,0 +1,42 @@
+a + button.copyBtn[type="button"] {
+  /* breathing space and large touch/click target area */
+  margin: 0.25em 1em;
+  padding: 0.25em 0.75em;
+}
+
+/* inclusively hidden text - added into the Copy buttons */
+/* https://www.scottohara.me/blog/2017/04/14/inclusively-hidden.html#hiding-content-visually */
+.sr-only:not(:focus):not(:active) {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+/* layout form elements */
+label[for] {
+  display: block;
+}
+textarea[id] {
+  display: block;
+  min-width: 70%;
+}
+button[type=reset] {
+margin: 1em 0;
+}
+/* Prettier typography */
+html {
+  font-family: "Inter", sans-serif;
+  line-height: 1.5;
+}
+@supports (font-variation-settings: normal) {
+  html {
+    font-family: "Inter var", sans-serif;
+  }
+}
+p {
+  max-width: 50em;
+}

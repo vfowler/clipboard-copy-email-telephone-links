@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Clipboard copy button for email and telephone links</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<p><a href="mailto:vernon@vfowler.com">vernon@vfowler.com</a></p>
+<p><a href="tel:+61412348027">+61 412 348 027</a></p>
+<p><a href="https://www.linkedin.com/in/vfowler/">Vernon Fowler on LinkedIn</a></p>
+<hr>
+<form>
+  <label for="testarea">Paste from clipboard</label>
+  <textarea id="testarea"></textarea>
+  <button type="reset">Clear</button>
+</form>
+<hr>
+<p>This prototype was inspired by <a href="https://adamsilver.io/articles/the-trouble-with-mailto-email-links-and-what-to-do-instead/">The trouble with mailto email links and what to do instead</a> by Adam Silver and Amy Hupe. Above, I <a href="https://inclusivedesignprinciples.org/#offer-choice">offer choice</a> by adding a <strong>clipboard copy button</strong> to email and telephone links. The links alone perform a primary action only, often fixed in the operating system.</p>
+<ul>
+  <li>Clicking an email link begins composing a new email message in the default mail app.</li>
+  <li>Clicking a telephone link dials the number to start a call in the default telephony app.</li>
+</ul>
+<p>Providing a Copy to clipboard button opens alternative options. For example,</p>
+<ul>
+  <li>Use a non-default mail app to compose an email message</li>
+  <li>Send an SMS to the (mobile) phone number</li>
+</ul>
+<p>Note, this script does not work in Internet Explorer. If you have a use case for clipboard copy buttons in this browser, please get in touch.</p>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>
